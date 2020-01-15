@@ -1,0 +1,23 @@
+{
+    "name": "vrkansagara/octobercms-skeletoncss",
+    "type": "october-theme",
+    "description": "Skeleton CSS Theme",
+    "keywords": ["skeleton", "css"],
+    "license": "BSD",
+    "authors": [
+        {
+            "name": "Vallabh Kansagara",
+            "email": "vrkansagara@gmail.com",
+            "role": "Co-founder"
+        }
+    ],
+    "require": {
+        "php": ">=5.4",
+        "composer/installers": "~1.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}

@@ -1,0 +1,58 @@
+description = "Default layout"
+==
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8">
+    <title>Your page title here :) - {{ this.page.title }}</title>
+    <meta name="description" content="{{ this.page.meta_description }}">
+    <meta name="title" content="{{ this.page.meta_title }}">
+    <meta name="author" content="Vallabh Kansagara">
+
+
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="{{ 'assets/css/normalize.css'|theme }}" rel="stylesheet">
+    <link href="{{ 'assets/css/skeleton.css'|theme }}" rel="stylesheet">
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="{{ 'assets/images/favicon.png'|theme }}">
+    <script src="{{ 'assets/vendor/jquery-3.4.1.min.js'|theme }}"></script>
+    {% styles %}
+</head>
+<body>
+
+<div class="container">
+    {% partial 'site/header' %}
+</div>
+<!-- Primary Page Layout
+–––––––––––––––––––––––––––––––––––––––––––––––––– -->
+<div class="container">
+    {% page %}
+</div>
+
+
+<div class="container">
+    {% partial 'site/footer' %}
+</div>
+
+{% framework extras %}
+{% scripts %}
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
